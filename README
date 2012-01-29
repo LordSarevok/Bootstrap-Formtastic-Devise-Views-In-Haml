@@ -1,0 +1,22 @@
+Formtastic is a pretty cool DSL for creating semantic forms with the minimum of fuss. Twitter's
+Bootstrap is a library for easily creating web apps. I suggest 'bootstrap-sass', since it doesn't
+have the dependency on less.  Here's how to setup formtastic bootstrap and devise:
+
+Add the gem to your Gemfile
+
+  # Gemfile
+  gem 'formtastic-bootstrap'
+
+Install the gem via bundler.
+
+  % bundle install
+
+Create configuration file for formatastic like below.
+
+  # config/initializers/formtastic.rb 
+  Formtastic::Helpers::FormHelper.builder = FormtasticBootstrap::FormBuilder
+
+Install Devise and create a devise model. Now copy the views into:
+
+  git clone git@github.com:jjeffus/Bootstrap-Formtastic-Devise-Views-In-Haml.git
+  mv Bootstrap-Formtastic-Devise-Views-In-Haml/devise /some/path/to/myapp/app/views
