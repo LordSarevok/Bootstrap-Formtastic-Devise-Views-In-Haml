@@ -1,3 +1,6 @@
+* Translate to spanish the views for devise 3.0, formtastic and haml.
+
+* Traducidas al español las vistas para devise 3.0, formtastic y haml.
 Formtastic is a pretty cool DSL for creating semantic forms with the minimum of fuss. Twitter's
 Bootstrap is a library for easily creating web apps. I suggest 'bootstrap-sass', since it doesn't
 have the dependency on less.  Here's how to setup formtastic bootstrap and devise:

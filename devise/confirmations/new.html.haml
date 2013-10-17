@@ -1,10 +1,10 @@
-%h2 Resend confirmation instructions
+%h2 Reenviar las instrucciones de confirmación
 
-= semantic_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post }) do |f|
+= semantic_form_for(resource, as: resource_name, url: confirmation_path(resource_name)) do |f|
   = f.semantic_errors
   = f.inputs do
-    = f.input :email, hint:"Enter your email address"
+    = f.input :email
   = f.buttons do
-    = f.commit_button :button_html => {:class => "primary", :value => "Resend confirmation instructions"}
+    = f.commit_button button_html: {class: "primary", value: "Reenviar las instrucciones de confirmación"}
 
-= render :partial => "devise/shared/links"
+= render "devise/shared/links"
