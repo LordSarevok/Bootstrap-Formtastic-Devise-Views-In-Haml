@@ -1,4 +1,4 @@
-%h2 Editar #{ resource_name.to_s.humanize }
+%h2 Editar mi cuenta
 = semantic_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
   = f.semantic_errors
   = f.inputs do
@@ -8,9 +8,3 @@
     = f.input :current_password
   = f.actions do
     = f.button 'Editar', class: "btn btn-success"
-
-%h3 Cancear mi cuenta
-
-%p ¿Quieres darte de baja? #{ link_to "Cancelar mi cuenta", registration_path(resource_name), data: {confirm: "¿Estás seguro?", method: :delete }}
-
-= link_to "Volver", :back

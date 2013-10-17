@@ -1,6 +1,6 @@
 %h2 Reenviar las instrucciones de desbloqueo.
 
-= semantic_form_for(resource, as: resource_name, url: unlock_path(resource_name)) do |f|
+= semantic_form_for(resource, as: resource_name, url: user_unlock_path, html: {method: :post}) do |f|
   = f.semantic_errors
   = f.inputs do
     = f.input :email
