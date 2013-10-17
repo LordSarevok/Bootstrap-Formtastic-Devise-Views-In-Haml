@@ -4,7 +4,7 @@
   = f.semantic_errors
   = f.inputs do
     = f.input :email
-  = f.buttons do
-    = f.commit_button button_html: {class: "primary", value: "Reenviar las instrucciones de confirmación"}
+  = f.actions do
+    = f.button 'Reenviar las instrucciones de confirmación', class: "btn btn-success"
 
 = render "devise/shared/links"
